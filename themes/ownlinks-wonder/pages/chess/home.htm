@@ -1,0 +1,13 @@
+title = "KidsChess Home: Chess games for children"
+url = "/chess/"
+layout = "default"
+meta_title = "Learning to play chess for the little ones"
+is_hidden = 0
+==
+{% partial "site/header" title1 = 'site.kidschess.title1'|_ subtitle1 = 'site.kidschess.subtitle1'|_ %} 
+
+{% set myAssets = 'assets/img/'|theme %}
+
+{% content "chess/home.htm" path2assets=myAssets %}
+
+ 

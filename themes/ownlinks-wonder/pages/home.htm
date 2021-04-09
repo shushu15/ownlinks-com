@@ -1,0 +1,77 @@
+title = "Web Applications to play and learn games: KidsChess, Cribbage"
+url = "/"
+layout = "default"
+meta_title = "Web Applications to play and learn games: KidsChess, Cribbage"
+is_hidden = 0
+==
+{% partial "site/header" title1 = 'site.home.h1'|_ subtitle1 = 'site.home.h2'|_ %}
+
+
+   <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+              <a href="/kidschess/">
+            <img class="img-fluid rounded-circle" src="{{ 'assets/img/01.jpg'|theme }}" alt="">
+              </a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+              <a href="/kidschess/">
+            <h2 class="display-4">{{ 'site.home.section1.main'|_ }}</h2>
+              </a>
+            <p>{{ 'site.home.section1.sub'|_ }}</p>
+            <a href="/chess/" class="btn btn-primary btn-xl rounded-pill mt-5">{{'button.learnmore'|_ }}</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+              <a href="https://gameberg.com/player/app/">
+                <img class="img-fluid rounded-circle" src="{{ 'assets/img/02.jpg'|theme }}" alt="">
+              </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+              <a href="https://gameberg.com/player/app/">
+            <h2 class="display-4">{{'site.home.section2.main'|_ }}</h2>
+              </a>
+            <p>{{ site.home.section2.sub|_ }}</p>
+            <a href="https://gameberg.com" class="btn btn-primary btn-xl rounded-pill mt-5">{{'button.learnmore'|_ }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <a href="/links">
+            <img class="img-fluid rounded-circle" src="{{ 'assets/img/03.jpg'|theme }}" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <a href="/links">
+            <h2 class="display-4">{{'site.home.section3.main'|_ }}</h2>
+            </a>
+            <p>{{'site.home.section1.sub'|_ }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

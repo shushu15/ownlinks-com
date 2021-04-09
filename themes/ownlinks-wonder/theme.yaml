@@ -1,0 +1,9 @@
+﻿name: ownlinks-wonder
+description: 'home page ownlinks.com'
+author: 'Alex Vasilev'
+homepage: ownlinks.com
+code: ''
+
+translate:
+    en: config/lang-en.yaml
+    ru: config/lang-ru.yaml
