@@ -1,0 +1,33 @@
+title = "KidsChess Cookies Policy"
+url = "/chess/cookies-policy"
+layout = "default"
+description = "This Cookies Policy explains what Cookies are and how We use them in KidsChess"
+meta_title = "KidsChess Cookies Policy"
+meta_description = "This Cookies Policy explains what Cookies are and how We use them"
+is_hidden = 0
+
+[viewBag]
+localeTitle[ru] = "Политика KidsChess в отношении файлов cookie"
+localeTitle[es] = "Política de cookies de KidsChess"
+localeDescription[ru] = "В этой Политике использования файлов cookie объясняется, что такое файлы cookie и как мы их используем в KidsChess."
+localeDescription[es] = "Esta Política de Cookies explica qué son las Cookies y cómo las usamos en KidsChess."
+localeMeta_title[ru] = "Политика KidsChess в отношении файлов cookie"
+localeMeta_title[es] = "Política de cookies de KidsChess"
+localeMeta_description[ru] = "В этой Политике использования файлов cookie объясняется, что такое файлы cookie и как мы их используем в KidsChess."
+localeMeta_description[es] = "Esta Política de Cookies explica qué son las Cookies y cómo las usamos en KidsChess."
+==
+{% partial "site/header" title1 = 'cookies.title'|_ subtitle1 = 'cookies.subtitle'|_ %}
+
+ <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-10">
+          <div class="p-5">
+
+{% content "chess/cookies-policy.htm" %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

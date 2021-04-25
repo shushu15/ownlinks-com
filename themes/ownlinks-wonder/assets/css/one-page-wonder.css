@@ -20,7 +20,7 @@ h6 {
 
 .btn-xl {
   text-transform: uppercase;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -31,7 +31,7 @@ h6 {
 }
 
 .rounded-pill {
-  border-radius: 5rem;
+  border-radius: 3rem;
 }
 
 .navbar-custom {
@@ -72,11 +72,14 @@ header.masthead .masthead-content {
   position: relative;
 }
 
-header.masthead .masthead-content .masthead-heading {
+header.masthead .masthead-content .masthead-heading, 
+.main-content .main-content-heading
+ {
   font-size: 2rem;
 }
 
-header.masthead .masthead-content .masthead-subheading {
+header.masthead .masthead-content .masthead-subheading, {
+.main-content .main-content-subheading
   font-size: 1rem;
 }
 
@@ -132,12 +135,27 @@ header.masthead .bg-circle-4 {
     padding-top: calc(5rem + 27px);
     padding-bottom: 5rem;
   }
-  header.masthead .masthead-content .masthead-heading {
+  header.masthead .masthead-content .masthead-heading,
+ .main-content .main-content-heading
+  {
     font-size: 3rem;
   }
-  header.masthead .masthead-content .masthead-subheading {
+  header.masthead .masthead-content .masthead-subheading,
+ .main-content .main-content-subheading
+  {
     font-size: 2rem;
   }
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}  
 }
 
 .bg-primary {

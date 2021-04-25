@@ -1,0 +1,24 @@
+title = "Page not found (404)"
+url = "/404"
+layout = "default"
+description = "We're sorry, but the page you requested cannot be found."
+meta_title = "Page not found"
+meta_description = "Page not found. 404"
+is_hidden = 0
+
+[viewBag]
+localeTitle[ru] = "Страница не найдена (404)"
+localeTitle[es] = "Página no encontrada (404)"
+localeDescription[ru] = "К сожалению запрашиваемая страница не найдена (404)"
+localeDescription[es] = "Lo sentimos, pero la página solicitada no se encuentra (404)"
+localeMeta_title[ru] = "Страница не найдена"
+localeMeta_title[es] = "Página no encontrada"
+localeMeta_description[ru] = "Страница не найдена. 404"
+localeMeta_description[es] = "Página no encontrada. 404"
+==
+{% partial "site/header" title1 = 'site.404.title1'|_  %}
+
+    <div class="container">
+        <h2>:( 404</h2>
+        <p>{{ 'site.404.subtitle1'|_ }}</p>
+    </div>

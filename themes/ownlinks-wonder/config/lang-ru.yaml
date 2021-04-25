@@ -12,8 +12,13 @@ site.kidschess.title1: 'KidsChess от Клуба Рифата'
 site.kidschess.subtitle1: 'Обучение игре в шахматы для самых маленьких'
 site.links.title1: 'Ссылки на ресурсы'
 site.links.subtitle1: 'архивные ссылки'
+site.404.title1: 'Страница не найдена'
+site.404.subtitle1: 'К сожалению запрашиваемая страница не найдена.'
 pr20210331.title: 'Приложение KidsChess: Обучающие шахматные игры для детей.'
 pr20210331.subtitle: 'Пресс-Релиз Март 31, 2021'
+cookies.title: 'KidsChess Политика Cookies'
+cookies.subtitle: 'мы не собираем персональные данные'
+
 
 
 

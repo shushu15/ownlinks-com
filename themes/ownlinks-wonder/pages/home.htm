@@ -1,12 +1,25 @@
 title = "Web Applications to play and learn games: KidsChess, Cribbage"
 url = "/"
 layout = "default"
+description = "Gaming Web Apps to play online of offline: KidsChess, Cribbage. Learning games, improve playing skills"
 meta_title = "Web Applications to play and learn games: KidsChess, Cribbage"
+meta_description = "Gaming Web Apps. Play, learn, have fun"
 is_hidden = 0
+
+[viewBag]
+localeTitle[ru] = "Веб Приложения для игр и обучения: KidsChess, Cribbage"
+localeTitle[es] = "Aplicaciones web para jugar y aprender juegos: KidsChess, Cribbage"
+localeDescription[ru] = "Игровые Веб Приложения для игр в интернете и дома: KidsChess, Cribbage. Изучение новых игр, повышение уровня игровых навыков"
+localeDescription[es] = "Aplicaciones web de juegos para jugar en línea o sin conexión: KidsChess, Cribbage. Aprender juegos, mejorar las habilidades de juego."
+localeMeta_title[ru] = "Веб Приложения для игр и обучения: KidsChess, Cribbage"
+localeMeta_title[es] = "Aplicaciones web para jugar y aprender juegos: KidsChess, Cribbage"
+localeMeta_description[ru] = "Игровые Веб-Приложения. Играй и изучай в удовольствие"
+localeMeta_description[es] = "Aplicaciones web de juegos. Juega, aprende, diviértete"
 ==
 {% partial "site/header" title1 = 'site.home.h1'|_ subtitle1 = 'site.home.h2'|_ %}
 
 
+  <div class="main-content">
    <section>
     <div class="container">
       <div class="row align-items-center">
@@ -20,7 +33,7 @@ is_hidden = 0
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
               <a href="/kidschess/">
-            <h2 class="display-4">{{ 'site.home.section1.main'|_ }}</h2>
+            <h2 class="main-content-heading">{{ 'site.home.section1.main'|_ }}</h2>
               </a>
             <p>{{ 'site.home.section1.sub'|_ }}</p>
             <a href="/chess/" class="btn btn-primary btn-xl rounded-pill mt-5">{{'button.learnmore'|_ }}</a>
@@ -44,9 +57,9 @@ is_hidden = 0
         <div class="col-lg-6">
           <div class="p-5">
               <a href="https://gameberg.com/player/app/">
-            <h2 class="display-4">{{'site.home.section2.main'|_ }}</h2>
+            <h2  class="main-content-heading">{{'site.home.section2.main'|_ }}</h2>
               </a>
-            <p>{{ site.home.section2.sub|_ }}</p>
+            <p>{{ 'site.home.section2.sub'|_ }}</p>
             <a href="https://gameberg.com" class="btn btn-primary btn-xl rounded-pill mt-5">{{'button.learnmore'|_ }}</a>
           </div>
         </div>
@@ -67,11 +80,12 @@ is_hidden = 0
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <a href="/links">
-            <h2 class="display-4">{{'site.home.section3.main'|_ }}</h2>
+            <h2  class="main-content-heading">{{'site.home.section3.main'|_ }}</h2>
             </a>
-            <p>{{'site.home.section1.sub'|_ }}</p>
+            <p>{{'site.home.section3.sub'|_ }}</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+ </div> 

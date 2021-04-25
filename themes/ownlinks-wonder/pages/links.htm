@@ -1,8 +1,20 @@
 title = "Recent links"
 url = "/links"
 layout = "default"
-meta_title = "Web Applications to play and learn games: KidsChess, Cribbage"
+description = "recent archived links"
+meta_title = "Recent links"
+meta_description = "Recent links - archive links from ownlinks.com"
 is_hidden = 0
+
+[viewBag]
+localeMeta_title[ru] = "Ссылки на ресурсы"
+localeMeta_title[es] = "Enlaces recientes"
+localeMeta_description[ru] = "Архивные ссылки сайта ownlinks.com"
+localeMeta_description[es] = "archivo de enlaces ownlinks.com"
+localeTitle[ru] = "Другие ссылки"
+localeTitle[es] = "Otros enlaces"
+localeDescription[ru] = "прошлые архивные ссылки"
+localeDescription[es] = "enlaces archivados recientes"
 ==
 {% partial "site/header" title1 = 'site.links.title1'|_ subtitle1 = 'site.links.subtitle1'|_ %}
 
@@ -10,62 +22,62 @@ is_hidden = 0
    <section>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
+        <div class="col-lg-10">
           <div class="p-5">
-              <a href="/kidschess/">
-            <img class="img-fluid rounded-circle" src="{{ 'assets/img/01.jpg'|theme }}" alt="">
-              </a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-              <a href="/kidschess/">
-            <h2 class="display-4">KidsChess: Chess games for children</h2>
-              </a>
-            <p>Learning to play chess for the little ones. Games teach children to pay attention, understand the relative strength of pieces and the importance of passed pawns. On Android, iOS, Windows phone and computers</p>
-            <a href="/chess/" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+          <ul>
+            <li><a href="/articles.html">SEO Articles</a></li>
+			<ul>
+				<li><a href="/google-sitemap.html" class="text">Google Sitemaps</a></li>
+				<li><a href="/advertise-rss.html" class="text">Advertising in RSS Feeds</a></li>
+				<li><a href="/link-exchange-problems.html" class="text">Link Exchanges Problems</a></li>
+				<li><a href="/link-tricks.html" class="text">Dirty Linking Tricks</a></li>
+				<li><a href="/link-strategy.html" class="text">Link Building Strategy</a></li>
+				<li><a href="/seo-friendly-pages.html" class="text">Search Engine Friendly Pages</a></li>
+				<li><a href="/extend_popularity.html" class="text">How To Extend The Reach Of Your Site </a></li>
+				<li><a href="/image-search.html" class="text">Search Engine Placement Using Google Image Search </a></li>
+				<li><a href="/google-sitemap-explain.html" class="text">Google Sitemaps Explained </a></li>
+				<li><a href="/good-site-have.html" class="text">Things Every Site Should Include</a></li>
+			</ul>	
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5">
-              <a href="https://gameberg.com/player/app/">
-                <img class="img-fluid rounded-circle" src="{{ 'assets/img/02.jpg'|theme }}" alt="">
-              </a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-5">
-              <a href="https://gameberg.com/player/app/">
-            <h2 class="display-4">Cribbage Web App</h2>
-              </a>
-            <p>Web-App Cribbage player. Uses ISMCTS-based algorithm to play and full search with weight tables to discard. Practice 6-card Cribbage with the original computer opponent on phones, tablets or computers</p>
-            <a href="https://gameberg.com" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="{{ 'assets/img/03.jpg'|theme }}" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">Other links</h2>
-            <p>recent archived links</p>
+            <li><a href="/tools.html">Tools</a></li>
+            <ul>
+                <li><a href="/ru/mail.ru.html" class="text">mail.ru</a></li>
+				<li><a href="/ru/yandex.ru.html" class="text">yandex</a></li>
+				<li><a href="/ru/rambler.ru.html" class="text">rambler</a></li>
+				<li><a href="/ru/narod.ru.html" class="text">narod</a></li>
+				<li><a href="/ru/google.ru.html" class="text">google</a></li>
+				<li><a href="/ru/liveinternet.ru.html" class="text">liveinternet</a></li>
+				<li><a href="/ru/livejournal.com.html" class="text">livejournal</a></li>
+				<li><a href="/ru/google.com.html" class="text">google</a></li>
+				<li><a href="/ru/yahoo.com.html" class="text">yahoo</a></li>
+				<li><a href="/ru/auto.ru.html" class="text">auto</a></li>
+				<li><a href="/ru/youtube.com.html" class="text">youtube</a></li>
+				<li><a href="/ru/rapidshare.com.html" class="text">rapidshare</a></li>
+				<li><a href="/ru/loveplanet.ru.html" class="text">loveplanet</a></li>
+				<li><a href="/ru/megaupload.com.html" class="text">megaupload</a></li>
+				<li><a href="/ru/msn.com.html" class="text">msn</a></li>
+				<li><a href="/ru/microsoft.com.html" class="text">microsoft</a></li>
+				<li><a href="/ru/diary.ru.html" class="text">diary</a></li>
+				<li><a href="/ru/rbc.ru.html" class="text">rbc</a></li>
+				<li><a href="/ru/ya.ru.html" class="text">ya</a></li>
+				<li><a href="/ru/fishki.net.html" class="text">fishki</a></li>
+				<li><a href="/ru/irr.ru.html" class="text">irr</a></li>
+				<li><a href="/ru/gismeteo.ru.html" class="text">gismeteo</a></li>
+				<li><a href="/ru/dating.ru.html" class="text">dating</a></li>
+				<li><a href="/ru/lenta.ru.html" class="text">lenta</a></li>
+				<li><a href="/ru/ozon.ru.html" class="text">ozon</a></li>
+				<li><a href="/ru/ag.ru.html" class="text">ag</a></li>
+				<li><a href="/ru/job.ru.html" class="text">job</a></li>
+			</ul>	
+            
+	        <li><a href="/link-exchange-problems.html">Link Exchanges Problem List</a>
+          
+            <li><a href="/good-site-have.html" >Things That Every Site Should Include</a>  </li>
+            <li><a href="/link-tricks.html" >How to avoid linking tricks</a> </li>
+            <li><a href="/link-strategy.html">Link Building Strategy</a> </li>
+            <li><a href="/seo-friendly-pages.html" >Search Engine Friendly Pages</a></li>
+            <li><a href="/image-search.html" >Search Engine Placement Using Google Image Search</a></li>
+		  </ul>
           </div>
         </div>
       </div>

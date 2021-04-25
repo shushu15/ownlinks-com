@@ -1,13 +1,23 @@
 title = "KidsChess Home: Chess games for children"
 url = "/chess/"
 layout = "default"
+description = "KidsChess: Chess games for children in one App"
 meta_title = "Learning to play chess for the little ones"
+meta_description = "KidsChess: Chess games for children in one App"
 is_hidden = 0
+
+[viewBag]
+localeTitle[ru] = "KidsChess Home: шахматы для детей"
+localeTitle[es] = "KidsChess Home: ajedrez para niños"
+localeMeta_title[ru] = "Обучение игре в шахматы для самых маленьких."
+localeMeta_title[es] = "Aprender a jugar al ajedrez para los más pequeños"
+localeMeta_description[ru] = "KidsChess: Шахматные игры для детей"
+localeMeta_description[es] = "KidsChess: juegos de ajedrez para niños"
+localeDescription[ru] = "KidsChess: Шахматные игры для детей"
+localeDescription[es] = "KidsChess: juegos de ajedrez para niños"
 ==
 {% partial "site/header" title1 = 'site.kidschess.title1'|_ subtitle1 = 'site.kidschess.subtitle1'|_ %} 
 
 {% set myAssets = 'assets/img/'|theme %}
 
 {% content "chess/home.htm" path2assets=myAssets %}
-
- 

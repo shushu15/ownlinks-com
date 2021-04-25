@@ -7,3 +7,4 @@ code: ''
 translate:
     en: config/lang-en.yaml
     ru: config/lang-ru.yaml
+    es: config/lang-es.yaml

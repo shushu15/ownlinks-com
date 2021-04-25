@@ -12,8 +12,12 @@ site.kidschess.title1: 'KidsChess by Rifat Club'
 site.kidschess.subtitle1: 'Learning to play chess for the little ones'
 site.links.title1: 'Recent links'
 site.links.subtitle1: 'links archive'
+site.404.title1: 'Page not found'
+site.404.subtitle1: 'We are sorry, but the page you requested cannot be found.'
 pr20210331.title: 'KidsChess: Teaching games for children in one App'
 pr20210331.subtitle: 'Press Release Mar 2021'
+cookies.title: 'KidsChess Cookies Policy'
+cookies.subtitle: 'no personal data collected'
 
 
 

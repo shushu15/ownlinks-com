@@ -10,13 +10,17 @@
     ## You may need to uncomment the following line for some hosting environments,
     ## if you have installed to a subdirectory, enter the name here also.
     ##
-    # RewriteBase /
+    RewriteBase /
     
     ##
     ## Uncomment following lines to force HTTPS.
     ##
-    # RewriteCond %{HTTPS} off
-    # RewriteRule (.*) https://%{SERVER_NAME}/$1 [L,R=301]
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{SERVER_NAME}/$1 [L,R=301]
+	
+	RewriteBase /
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
     ##
     ## Black listed folders
@@ -41,9 +45,14 @@
     RewriteCond %{REQUEST_FILENAME} !/themes/.*/(assets|resources)/.*
     RewriteCond %{REQUEST_FILENAME} !/plugins/.*/(assets|resources)/.*
     RewriteCond %{REQUEST_FILENAME} !/modules/.*/(assets|resources)/.*
-    RewriteCond %{REQUEST_FILENAME} !/kidschess/*
+    # it is a new App
+    RewriteCond %{REQUEST_FILENAME} !/kidschess/*	
+    RewriteCond %{REQUEST_FILENAME} !/.*/kidschess/*	
+    RewriteCond %{REQUEST_FILENAME} !/ktest/*	
     RewriteRule !^index.php index.php [L,NC]
 
+	RewriteRule ^(kidschess|ktest)($|/) - [L]
+	
     ##
     ## Block all PHP files, except index
     ##
@@ -57,4 +66,18 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 	
+    RewriteCond %{THE_REQUEST} ^GET\ .*/index\.(php|html)\ HTTP [OR]
+    RewriteCond %{THE_REQUEST} ^GET\ .*/index\.(php|html)\ HTTPS
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule ^(.*)index\.(php|html)$ /$1 [R=301,L]		
+
 </IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “alt-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-alt-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
