@@ -1,0 +1,33 @@
+title = "KidsChess Privacy Policy"
+url = "/chess/privacy-policy"
+layout = "default"
+description = "This Privacy Policy explains what information We store and how We use it in KidsChess"
+meta_title = "KidsChess Cookies Policy"
+meta_description = "This Privacy Policy explains what information We store and how We use it in KidsChess"
+is_hidden = 0
+
+[viewBag]
+localeTitle[ru] = "Политика KidsChess в отношении файлов cookie"
+localeTitle[es] = "Política de cookies de KidsChess"
+localeDescription[ru] = "Эта Политика конфиденциальности объясняет, какую информацию мы храним и как мы ее используем в KidsChess"
+localeDescription[es] = "Esta Política de privacidad explica qué información almacenamos y cómo la usamos en KidsChess"
+localeMeta_title[ru] = "Политика KidsChess в отношении файлов cookie"
+localeMeta_title[es] = "Política de cookies de KidsChess"
+localeMeta_description[ru] = "Эта Политика конфиденциальности объясняет, какую информацию мы храним и как мы ее используем в KidsChess"
+localeMeta_description[es] = "Esta Política de privacidad explica qué información almacenamos y cómo la usamos en KidsChess"
+==
+{% partial "site/header" title1 = 'privacy.title'|_ subtitle1 = 'privacy.subtitle'|_ %}
+
+ <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-10">
+          <div class="p-5">
+
+{% content "chess/privacy-policy.htm" %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
