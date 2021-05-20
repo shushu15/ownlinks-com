@@ -190,3 +190,16 @@ header.masthead .bg-circle-4 {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
 
+.google-store-logo img {
+ max-width: auto;
+  max-height: 80px;
+  padding: 0;
+  margin:0;
+}
+.microsoft-store-logo img {
+ max-width: auto;
+ max-height: 58px;
+  padding: 0;
+  margin:0;
+}
+
